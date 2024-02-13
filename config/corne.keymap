@@ -28,13 +28,13 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |    T      |              |  Y  |  U   |  I  |  O  |  P  | ESC    |
 // | CTRL |  A  |  S  |  D  |  F  |    G      |              |  H  |  J   |  K  |  L  |  ;  | MEH/ ' |
-// | SHFT |  Z  |  X  |  C  |  V  |    B      |              |  N  |  M   |  ,  |  .  |  /  | ALT    |
-//                    | GUI | LWR | HYPER/SPC |              | SHFT/ENT | RSE | BKSP |
+// | SHFT |  Z  |  X  |  C  |  V  |    B      |              |  N  |  M   |  ,  |  .  |  /  | HYPER  |
+//                    | GUI | LWR | Alt/SPC   |              | SHFT/ENT | RSE | BKSP |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T                    &kp Y &kp U   &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G                    &kp H &kp J   &kp K     &kp L   &kp SEMI &tp LC(LS(LALT)) SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B                    &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp LALT
-             &kp LGUI &mo 1 &tp LC(LS(LA(LGUI))) SPACE        &tp RSHFT RET &mo 2 &kp BSPC
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B                    &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp LC(LS(LA(LGUI)))
+             &kp LGUI &mo 1 &tp LALT SPACE                    &tp RSHFT RET &mo 2 &kp BSPC
                         >;
                 };
 
@@ -42,8 +42,8 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  !  |  @  |  #   |  $  |    %      |             |  ^        |  &  |  *   |  (  |  )  |   \   |
 // | CTRL |  1  |  2  |  3   |  4  |    5      |             |  -        |  =  |  `   |  [  |  ]  |  "|"  |
-// | SHFT |  6  |  7  |  8   |  9  |    0      |             |  _        |  +  |  ~   |  {  |  }  | ALT   |
-//                    | GUI  |     | HYPER/SPC |             | SHFT/ENT  |     | BKSP |
+// | SHFT |  6  |  7  |  8   |  9  |    0      |             |  _        |  +  |  ~   |  {  |  }  | HYPER |
+//                    | GUI  |     | ALT/SPC   |             | SHFT/ENT  |     | BKSP |
                         bindings = <
    &trans    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
    &trans    &kp N1   &kp N2 &kp N3   &kp N4   &kp N5         &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
@@ -56,8 +56,8 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |      |      |      | Prev | Next        |        | Vol-     | Vol+ | P/P  |       |     | ESC   |
 // | CTRL | F1   | F2   | F3   | F4   | F5          |        | LFT      | DWN  | UP   | RGT   |     | MEH/' |
-// | SHFT | F6   | F7   | F8   | F9   | F10         |        | BT0      | BT1  | BT2  | BTCLR |     | ALT   |
-//                      | GUI  |      | HYPER/SPC   |        | SHFT/ENT |      | BKSP |
+// | SHFT | F6   | F7   | F8   | F9   | F10         |        | BT0      | BT1  | BT2  | BTCLR |     | HYPER |
+//                      | GUI  |      | ALT/SPC     |        | SHFT/ENT |      | BKSP |
                         bindings = <
    &trans &none  &none  &none  &kp C_PREV &kp C_NEXT          &kp C_VOL_DN &kp C_VOL_UP &kp C_PP     &none      &none &trans
    &trans &kp F1 &kp F2 &kp F3 &kp F4     &kp F5              &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT  &none &trans
